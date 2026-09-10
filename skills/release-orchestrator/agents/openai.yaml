@@ -1,0 +1,7 @@
+interface:
+  display_name: "Release Orchestrator"
+  short_description: "Evidence-first release orchestration"
+  default_prompt: "Use $release-orchestrator to solve this release-sensitive task with minimal blast radius. Delegate only when the delegation gate passes, treat worker output as evidence rather than truth, and validate material claims before declaring completion."
+
+policy:
+  allow_implicit_invocation: true
