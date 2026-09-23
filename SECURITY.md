@@ -17,8 +17,8 @@ The public skill intentionally:
 
 Please avoid publishing secrets, proof-of-concept payloads against real third-party systems, or sensitive account data in a public issue.
 
-Before the repository is public, report security concerns directly to the repository owner through an available private GitHub contact channel. A dedicated private reporting channel can be added at public launch.
+Use GitHub private vulnerability reporting when available. If private vulnerability reporting is unavailable, contact the repository owner privately through an available GitHub channel.
 
 ## Supported versions
 
-Until `v1.0.0` is released, the repository is pre-release and only the latest `main` state is maintained.
+Security fixes are maintained for the latest public release and the current `main` branch.

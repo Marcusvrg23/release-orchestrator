@@ -147,7 +147,7 @@ The project was generalized from an internal release-orchestration workflow used
 
 ## Status
 
-`v1.0.0` is the current release candidate. Public launch is intentionally gated on final privacy-safe Git history verification and explicit repository-publication approval.
+`v1.0.0` is the current release. See [`CHANGELOG.md`](CHANGELOG.md) and [`RELEASE_NOTES.md`](RELEASE_NOTES.md).
 
 ## License
 
