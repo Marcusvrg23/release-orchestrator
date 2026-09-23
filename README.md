@@ -8,6 +8,26 @@ Release Orchestrator teaches an AI coding agent **when not to delegate**, how to
 
 It follows the open `SKILL.md` Agent Skills convention rather than depending on a specific model or vendor.
 
+## 30-second start
+
+Preview the skill with the GitHub CLI:
+
+```bash
+gh skill preview Marcusvrg23/release-orchestrator release-orchestrator
+```
+
+Install it into a supported agent host:
+
+```bash
+gh skill install Marcusvrg23/release-orchestrator release-orchestrator
+```
+
+Then ask your coding agent to use `release-orchestrator` on a release blocker, risky fix, incident, or high-consequence code change.
+
+### See the protocol in 10 seconds
+
+![Release Orchestrator delegation and evidence flow](docs/assets/release-orchestrator-demo.gif)
+
 ## Why this exists
 
 Multi-agent coding can be powerful, but indiscriminate fan-out creates duplicated investigation, context bloat, conflicting edits, and false confidence.
@@ -37,6 +57,12 @@ MINIMAL CHANGE -> TARGETED TESTS -> RELEASE DECISION
 ```
 
 > **More agents are not automatically more intelligence. Delegation must earn its cost.**
+
+## Not another release automation script
+
+Many tools named "release orchestrator" automate version bumps, changelogs, deployment pipelines, or release packets. This project solves a different problem: **how an AI coding agent should coordinate work and prove release-sensitive claims.**
+
+Use it when the hard part is deciding whether to delegate, containing blast radius, validating a risky change, reconciling conflicting evidence, or determining whether a candidate is actually ready.
 
 ## Core principles
 
@@ -147,7 +173,7 @@ The project was generalized from an internal release-orchestration workflow used
 
 ## Status
 
-`v1.0.0` is the current release. See [`CHANGELOG.md`](CHANGELOG.md) and [`RELEASE_NOTES.md`](RELEASE_NOTES.md).
+`v1.0.1` is the current release. See [`CHANGELOG.md`](CHANGELOG.md) and [`RELEASE_NOTES.md`](RELEASE_NOTES.md).
 
 ## License
 

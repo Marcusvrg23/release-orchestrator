@@ -2,6 +2,24 @@
 
 All notable public changes will be documented here.
 
+## [1.0.1] - 2026-09-23
+
+### Added
+
+- official `gh skill preview` and `gh skill install` quick-start commands;
+- animated delegation/evidence demo and repository social-preview asset;
+- reusable launch kit for technical community posts and short-form demos;
+- reproducible launch-asset generator.
+
+### Security
+
+- enabled GitHub secret scanning and push protection;
+- added active rulesets preventing deletion or history rewrite of `main` and preventing updates/deletion of `v*` release tags.
+
+### Clarified
+
+- distinguished the project from semantic-versioning/deployment-pipeline tools that share the `release-orchestrator` name.
+
 ## [1.0.0] - 2026-09-10
 
 ### Added

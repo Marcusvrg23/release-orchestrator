@@ -1,4 +1,4 @@
-# Release Orchestrator v1.0.0
+# Release Orchestrator v1.0.1
 
 > **Ship with evidence, not agent confidence.**
 
@@ -6,7 +6,24 @@ Release Orchestrator is a provider-agnostic Agent Skill for release engineering,
 
 Its central rule is simple: **delegation must earn its cost**. The root agent stays responsible for the task, specialists are bounded and evidence-producing, and material claims are verified before a release decision.
 
-## Highlights
+## What's new in v1.0.1
+
+- official GitHub CLI Agent Skills quick start:
+  - `gh skill preview Marcusvrg23/release-orchestrator release-orchestrator`
+  - `gh skill install Marcusvrg23/release-orchestrator release-orchestrator`
+- animated delegation/evidence demo in the README;
+- social-preview asset and reproducible launch-asset generator;
+- launch kit for Show HN, Reddit, LinkedIn, X / Threads, and short video;
+- clearer differentiation from deployment/versioning tools with the same generic name;
+- GitHub secret scanning and push protection enabled;
+- rulesets protecting `main` history and immutable `v*` release tags.
+
+## Core workflow
+
+```text
+UNDERSTAND -> REPRODUCE -> ISOLATE -> CHANGE -> VERIFY -> PRESERVE -> DECIDE
+```
+## Core guarantees of the protocol
 
 - root-only execution by default;
 - explicit delegation gate before spawning specialists;
@@ -17,14 +34,7 @@ Its central rule is simple: **delegation must earn its cost**. The root agent st
 - minimal-blast-radius change policy;
 - proportional validation and evidence freshness rules;
 - adapters for OpenAI Codex, Claude Code, Gemini CLI, Cursor, GitHub Copilot, and generic agent harnesses;
-- examples for bug fixes, incidents, release readiness, and security reviews;
 - MIT licensed portable `SKILL.md` bundle.
-
-## Core workflow
-
-```text
-UNDERSTAND -> REPRODUCE -> ISOLATE -> CHANGE -> VERIFY -> PRESERVE -> DECIDE
-```
 
 ## Portable bundle
 
@@ -32,7 +42,11 @@ UNDERSTAND -> REPRODUCE -> ISOLATE -> CHANGE -> VERIFY -> PRESERVE -> DECIDE
 skills/release-orchestrator/
 ```
 
-Copy that directory into the Agent Skills discovery path supported by your host. See `adapters/` and `docs/compatibility.md` for host-specific guidance.
+Preview before installing:
+
+```bash
+gh skill preview Marcusvrg23/release-orchestrator release-orchestrator
+```
 
 ## Philosophy
 
